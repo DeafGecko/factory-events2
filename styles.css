@@ -1,0 +1,144 @@
+body {
+      font-family: 'Inter', sans-serif;
+      letter-spacing: -0.02em;
+      -webkit-tap-highlight-color: transparent;
+      }
+
+h1, h2, h3 { 
+      font-family: 'Playfair Display', serif; 
+      }
+
+.factory-label {
+      display: block;
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 4px;
+      }
+
+.factory-input, .time-select {
+      width: 100%;
+      background: transparent;
+      border-bottom: 2px solid #ccc;
+      padding: 10px 0;
+      outline: none;
+      transition: all 0.3s;
+      border-radius: 0;
+      }
+
+.time-select { 
+      border-bottom: none; 
+      font-family: 'Space Mono', monospace; 
+      font-size: 14px; 
+      width: auto; 
+      cursor: pointer; 
+      }
+
+/* Status Badges */
+.badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 8px;
+      padding: 2px 6px;
+      border: 1px solid black;
+      font-weight: bold;
+      }
+
+.status-LIVE { 
+      background: #991b1b; 
+      color: white; 
+      border-color: #991b1b; 
+      }
+
+.status-CONFIRMED { 
+      background: black; 
+      color: white; 
+      }
+
+.status-DRAFT { 
+      background: transparent; 
+      color: #666; 
+      border-color: #ccc; 
+      }
+
+.status-COMPLETE { 
+      background: #166534; 
+      color: white; 
+      border-color: #166534; 
+      }
+
+.factory-input:focus { 
+      border-color: #000; 
+      }
+
+.event-card:hover { 
+      background: #fff; 
+      }
+
+.truncate { 
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+      white-space: nowrap; 
+      }
+
+/* Month Filter Bar */
+.month-pill {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border: 1px solid #848484;
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+      }
+
+.month-pill:hover {
+      background: #000;
+      color: #fff;
+      }
+
+.month-pill-active {
+      background: #3e3e3e;
+      color: #fff;
+      }
+
+.month-pill-empty {
+      border-color: #ccc;
+      color: #bbb;
+      cursor: default;
+      }
+
+.month-pill-empty:hover {
+      background: transparent;
+      color: #bbb;
+      }
+
+/* Month section header in event list */
+.month-section-header {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #999;
+      padding: 16px 0 6px;
+      border-bottom: 1px dashed #ccc;
+      margin-bottom: 0;
+      }
+
+/* Series Indicator */
+.series-tag {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: #991b1b; /* Red-800 to signal a routine */
+      border-left: 2px solid #991b1b;
+      padding-left: 4px;
+      margin-top: 4px;
+      text-transform: uppercase;
+      }
